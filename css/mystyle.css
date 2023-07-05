@@ -92,9 +92,6 @@
 
 .div1_about{
     float: left;
-    padding-right: 1em;
-    margin-right: 6.2em;  /*removes top space*/
-    margin-right: -9px;   /*removes top space*/
 }
 
 
@@ -242,3 +239,58 @@
     width: 100%;
     color: #fff;
 }
+
+
+.topnav{
+/*overflow:visible ; */
+position: relative;
+background-color: black;
+}
+
+.topnav #myLinks {
+display: none;
+}
+ 
+.topnav a {
+    color: #fff;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+}
+
+
+.topnav a.icon  {
+    display: block;
+    position: absolute;
+    right: 0;
+    /*left: 0;*/
+}
+
+
+.icon_back{
+color: #126855 !important ;
+}
+
+
+@media screen and (max-width:785px){
+    .nav_div{
+        display: none;
+    }
+    .nav_about{
+        display: none;
+    }
+    #footer{
+        display: none;
+    }
+
+    #profile_img{
+        width: 100%;
+        height: auto;
+    }
+
+}
+
+
+
+
