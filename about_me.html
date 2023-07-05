@@ -3,6 +3,8 @@
 <!-- head starts here-->
     <head>
         <link rel="stylesheet" href="css/mystyle.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
         <title>
          About Myself
         </title>
@@ -24,8 +26,26 @@
                    
               </nav>
         </div>
+ <!-- Top Navigation Menu -->
+ <div class="topnav">
 
-       <div class="div1_about">
+  <!--Navigation Links(hidden by default) -->
+  <div id="myLinks">
+      <a href="index.html" class="nav_a">Home</a> 
+      <a href="about_me.html" class="nav_a">About me</a> 
+      <a href="my_games.html" class="nav_a">Video Games</a>
+      <a href="my_project.html" class="nav_a">My Projects</a>
+      <a href="contact_me.html" class="nav_a">Contact Me</a>
+
+  </div>
+  <!--"Hamburger Menu"/ "Bar icon" to togglethe navigation links-->
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+
+          <div class="div1_about">
         <img src="img/IMG_0555.JPG" id="IMG_0555" width="700" height="700"/>
 
        </div>
@@ -54,7 +74,32 @@ I love learning new things and i like to play with my neighbors and my brother. 
 
   </div>  
 
+
+
+
+
+
+
+
 </p>
+
+<script>
+
+  function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+          x.style.display = "none";
+      }
+      else{
+          x.style.display = "block";
+      }
+  }
+</script>
+      
+
+
+
+
 
 </body>
 </html>
